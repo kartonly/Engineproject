@@ -1,4 +1,5 @@
 
+
 body{
     font-family: 'Anton', sans-serif
 }
@@ -6,6 +7,11 @@ footer{
   padding: 1%;
   background:black;
   color:white;
+}
+.card:hover {
+  -webkit-transform: scale(1.12);
+  -ms-transform: scale(1.12);
+  transform: scale(1.12);
 }
 .nameofus{
   display: flex;
