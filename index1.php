@@ -46,6 +46,15 @@
 </div>
 <h1>Наши лошади</h1>
 <?php
+$mysqli = mysqli_connect('std-mysql', 'std_941', '84996111636', 'std_941');
+if( mysqli_connect_errno() ) // проверяем корректность подключения
+return 'Ошибка подключения к БД: '.mysqli_connect_error();
+$sql_res=mysqli_query($mysqli,"SELECT * FROM horses");
+$sql_res = mysqli_query($mysqli,'SELECT COUNT(`c`.`name`) `count` FROM  `horses` `c`') or die($mysqli_error());
+while ($row = mysqli_fetch_assoc($sql_res))
+echo '<h2>Всего лошадей - '.$row['count'].'</h2>';
+?>
+<?php
 include 'viewer1.php'; 
 // подключаеммодульсбиблиотекойфункций
 // есливпараметрахнеуказанатекущаястраница – выводимсамуюпервую
