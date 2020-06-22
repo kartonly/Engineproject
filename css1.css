@@ -1,0 +1,242 @@
+
+body{
+    font-family: 'Anton', sans-serif
+}
+footer{
+  padding: 1%;
+  background:black;
+  color:white;
+}
+.nameofus{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding-bottom: 3%;
+}
+.footermenu{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding-bottom: 1%;
+}
+.footerpodmenu{
+  color:white;
+  text-decoration: none;
+}
+.footerpodmenu:hover{
+  color:#827e4b;
+  text-decoration: none;
+}
+.soc{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding-bottom: 3%;
+}
+main{
+  background-color:white;
+}
+.headercont{
+    background: url(https://sun1-22.userapi.com/W9HN0A9ipTh44eZNIy3UAtxRtON6rEqVJ82_qQ/1D6PT2GQewY.jpg);
+    background-repeat:no-repeat;
+    background-size: 100%;
+    margin:0 auto;
+    height: 350px;
+    background-position: 0px -240px;
+  }
+h2{
+  color:#777e42;
+}
+h3{
+  color:#605a5a;
+}
+
+.servises{
+    background:#827e4b;
+    display: grid;
+  grid-gap: 30px;
+  padding: 2%;
+  grid-template-columns: repeat(auto-fit, 320px);
+  grid-template-rows: repeat(1, auto-fit);
+  justify-content: center; 
+}
+
+.logo2{
+    width: 22%;
+}
+.headmenu{
+    font-family: 'Anton', sans-serif;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: rgb(37, 12, 0);
+}
+.headmenu:hover{
+    text-decoration: overline 3px solid #807f49;
+    color: #807f49
+}
+.hamburger-menu{
+    display: none;
+}
+.logocontainer{
+    display: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    width: 100%;
+    position: fixed;
+    background:white;
+    top:0;
+    z-index: 10000;
+    padding: 1.5%;
+}
+.menucontainer{
+    display: inline flex;
+    justify-content: space-between;
+    width: 60%;
+    margin-left: 7%;
+}
+
+@media all and (max-width: 1050px){
+    .headercont{
+      background: url(https://sun1-22.userapi.com/W9HN0A9ipTh44eZNIy3UAtxRtON6rEqVJ82_qQ/1D6PT2GQewY.jpg);
+      background-repeat:no-repeat;
+      background-size: 100%;
+      margin:0 auto;
+      height: 350px;
+      background-position: 0px ;
+    }
+  }
+@media all and (max-width: 930px) and (min-width:630px) {
+    .menucontainer{
+        display: inline flex;
+        justify-content: space-between;
+        width: 68%;
+        margin-left: 3%;
+    }
+}
+
+ @media all and (max-width: 800px) {
+    .hamburger-menu{display: inline;;}
+    .logo{
+        width: 65%;
+    }
+    .logo2{
+        display: none;
+    }
+    header{
+        
+        align-items: center;
+        display: flex;
+    height: auto;
+    width: 100%;
+    position: fixed;
+    background:white;
+    top:0;
+    z-index: 10000;
+    padding: 1.5%;
+    }
+    .logocontainer{
+        display: flex ;
+        width: 100%;
+        flex-direction:row ;
+        justify-content: center;
+    }
+    .headmenu{
+        display: none;
+    }
+#menu__toggle {
+    opacity: 0;
+  }
+  
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+  }
+  
+  .menu__btn {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+  
+    width: 26px;
+    height: 26px;
+  
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #502d4d;
+    transition-duration: .25s;
+  }
+  .menu__btn > span::before {
+    content: '';
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: '';
+    top: 8px;
+  }
+  
+  .menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+  
+    width: 300px;
+    height: 100%;
+  
+    margin: 0;
+    padding: 80px 0;
+  
+    list-style: none;
+  
+    background-color: #c36e41;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  
+    transition-duration: .25s;
+  }
+  
+  .menu__item {
+    display: block;
+    padding: 12px 24px;
+  
+    color: #333;
+  
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+  
+    text-decoration: none;
+  
+    transition-duration: .25s;
+  }
+  .menu__item:hover {
+    background-color: #924a24;
+  }
+ 
+  }
