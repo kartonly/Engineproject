@@ -1,0 +1,238 @@
+
+body{
+    font-family: 'Anton', sans-serif
+}
+main{
+  background-color:white;
+}
+.contakts{
+    align-items: center;
+    padding: 5%;
+    padding-top: 2%;
+}
+
+.lokationcard{
+    background: url(https://sun9-23.userapi.com/c851332/v851332450/adb49/tbFsXGGDZzY.jpg);
+    background-size: cover;
+    padding: 5%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+table.menegers {
+    width: 100%; 
+    border: 0px;
+    border-collapse: collapse;
+}
+table.menegers thead {
+    font-weight: bold;
+}
+table.menegers td {
+    padding: 1%; 
+    border-bottom: 1px solid #e8e9eb;
+}
+.nameofus{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding-bottom: 3%;
+}
+.footermenu{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding-bottom: 1%;
+}
+.footerpodmenu{
+  color:white;
+  text-decoration: none;
+}
+.footerpodmenu:hover{
+  color:#827e4b;
+  text-decoration: none;
+}
+.soc{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding-bottom: 3%;
+}
+.callme{
+  display: flex;
+  padding: 3% ;
+  justify-content: center;
+  
+  background:#827e4b;
+}
+.headmenu{
+    font-family: 'Anton', sans-serif;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: rgb(37, 12, 0);
+}
+.headmenu:hover{
+    text-decoration: overline 3px solid #807f49;
+    color: #807f49
+}
+.hamburger-menu{
+    display: none;
+}
+a.button {
+    display: inline-block;
+    font-weight: 700;
+    text-decoration: none;
+    user-select: none;
+    padding: .5em 2em;
+    outline: none;
+    color: #c53a34;
+    border: 2px solid #c53a34;
+    border-radius: 1px;
+    transition: 0.2s;
+    margin: 1%;
+    
+  } 
+  a.button:hover { color: #807f49 ; border: 2px solid #807f49; }
+
+.butons{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+@media all and (max-width: 630px) {
+  .pricecont{
+      background: url(https://sun9-42.userapi.com/c846021/v846021329/18adea/7StukgKQQCM.jpg) ;
+      margin:0 auto;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  }
+}
+@media all and (max-width: 1050px){
+    table.menegers thead {
+      display: none;
+    }
+    table.menegers tr {
+      display: block;
+      margin-bottom: 2%;
+      border-bottom: 2px solid #e8e9eb;
+      padding: 1%;
+    }
+    table.menegers td {
+      display: block;
+      padding: 1%;
+    }
+    table.menegers td:before {
+      content: attr(aria-label);
+      font-weight: bold;
+    }
+  
+}
+ @media all and (max-width: 800px) {
+    .hamburger-menu{display: inline;;}
+    .logo{
+        width: 65%;
+    }
+    .logocontainer{
+        display: flex ;
+        width: 100%;
+        flex-direction:row ;
+        justify-content: center;
+    }
+    .headmenu{
+        display: none;
+    }
+#menu__toggle {
+    opacity: 0;
+  }
+  
+  #menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+  }
+  #menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+  #menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    left: 0;
+  }
+  
+  .menu__btn {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+  
+    width: 26px;
+    height: 26px;
+  
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .menu__btn > span,
+  .menu__btn > span::before,
+  .menu__btn > span::after {
+    display: block;
+    position: absolute;
+  
+    width: 100%;
+    height: 2px;
+  
+    background-color: #502d4d;
+  
+    transition-duration: .25s;
+  }
+  .menu__btn > span::before {
+    content: '';
+    top: -8px;
+  }
+  .menu__btn > span::after {
+    content: '';
+    top: 8px;
+  }
+  
+  .menu__box {
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    left: -100%;
+  
+    width: 300px;
+    height: 100%;
+  
+    margin: 0;
+    padding: 80px 0;
+  
+    list-style: none;
+  
+    background-color: #c36e41;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+  
+    transition-duration: .25s;
+  }
+  
+  .menu__item {
+    display: block;
+    padding: 12px 24px;
+  
+    color: #333;
+  
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+  
+    text-decoration: none; 
+  
+    transition-duration: .25s;
+  }
+  .menu__item:hover {
+    background-color:  #ff9822;
+  }
+ 
+  }
+  
