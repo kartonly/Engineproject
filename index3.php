@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
 <title>ЧК "Мадрид"</title>
-<html lang="en">
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="css3.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
@@ -25,7 +24,7 @@
 			<li><a class="menu__item" href="index1.php">Наши лошади</a></li>
 			<li><a class="menu__item" href="index2.php">Наша команда</a></li>
 			<li><a class="menu__item" href="index3.php">Отзывы</a></li>
-			<li><a class="menu__item" href="index4.html">Контакты</a></li>
+			<li><a class="menu__item" href="index4.php">Контакты</a></li>
     </ul>
   </div>
 
@@ -37,7 +36,7 @@
 <a class="headmenu" href="index1.php">Наши лошади</a>
 <a class="headmenu" href="index2.php">Наша команда</a>
 <a class="headmenu" href="index3.php">Отзывы</a>
-<a class="headmenu" href="index4.html">Контакты</a></div>
+<a class="headmenu" href="index4.php">Контакты</a></div>
 </header>
 <main>
 
@@ -79,7 +78,7 @@ echo getFriendsList($_GET['sort'], $_GET['pg']);
      <label for="surname">Фамилия</label>
      <input id="surname" type="text" name="surname" placeholder="Фамилия">
      <label for="document">Ваш отзыв</label>
-     <textarea id="document" type="text" name="document" placeholder="Отзыв"></textarea>
+     <textarea id="document" name="document" placeholder="Отзыв"></textarea>
      <input type="submit" name="button" class="form-control" value="Опубликовать"> 
   </div>
 </form>
@@ -111,6 +110,7 @@ $sql_res=mysqli_query($mysqli,'INSERT INTO std_941.review (name, surname, docume
 $name = '';
 $surname = '';
 $document = '';
+header("Refresh: 0");
 }
 ?>
   </div>
@@ -126,8 +126,6 @@ $document = '';
 <div class="soc">
 <a href="#"><img src="http://domenblin.std-941.ist.mospolytech.ru/2sem_laba4/4web/Vector%284%29.png" alt=""></a>
 </div>
-
-  </div>
 </footer>
 </body>
 </html>
