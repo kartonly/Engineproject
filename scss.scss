@@ -1,0 +1,142 @@
+@use "sass:color";
+@use 'sass:map';
+$primary-color:white;
+header{
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+    width: 100%;
+    position: fixed;
+    background:white;
+    top:0;
+    z-index: 10000;
+    padding: 1.5%;
+    @media print{
+        display:none;
+    };
+    @media all and (max-width: 800px) {
+            
+        align-items: center;
+        display: flex;
+        height: auto;
+        width: 100%;
+        position: fixed;
+        background:$primary-color;
+        top:0;
+        z-index: 10000;
+        padding: 1.5%;
+            
+    }
+}
+.logo2{
+    width: 22%;
+    @media all and (max-width: 800px) {
+            display: none;
+        };
+        @media print{
+                display: none;
+            }    
+}
+.map{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    overflow:hidden;
+    padding-bottom:35%;
+    position:relative;
+    height:0;
+    @media print{
+            display: none;
+        }
+
+}
+iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+footer{
+    padding: 1%;
+    background:black;
+    color:$primary-color;
+    @media print{
+        display: none;
+        background:$primary-color;
+    }
+  }
+.logocontainer{
+    display: none;
+    @media all and (max-width: 800px) {
+        display: flex ;
+        width: 100%;
+        flex-direction:row ;
+        justify-content: center;
+    }
+    @media print{
+        display: none;
+    }
+}
+.menucontainer{
+    display: inline flex;
+    justify-content: space-between;
+    width: 60%;
+    margin-left: 7%;
+    @media all and (max-width: 930px) and (min-width:630px) {
+            display: inline flex;
+            justify-content: space-between;
+            width: 68%;
+            margin-left: 3%;
+    }
+    @media print{
+        display: none;
+    }
+}
+.contaktme{
+    margin: 0px;
+      padding: 0px;
+      width: 100%;
+      display: grid;
+      @media print{
+        display: none;
+      }
+  }
+.headercont{
+    background: url(https://sun1-22.userapi.com/W9HN0A9ipTh44eZNIy3UAtxRtON6rEqVJ82_qQ/1D6PT2GQewY.jpg);
+    background-repeat:no-repeat;
+    background-size: 100%;
+    margin:0 auto;
+    height: 350px;
+    background-position: 0px -240px;
+    @media all and (max-width: 1050px){
+
+          background: url(https://sun1-22.userapi.com/W9HN0A9ipTh44eZNIy3UAtxRtON6rEqVJ82_qQ/1D6PT2GQewY.jpg);
+          background-repeat:no-repeat;
+          background-size: 100%;
+          margin:0 auto;
+          height: 350px;
+          background-position: 0px ;
+        }
+    @media print{
+        display: none;
+    }
+  }
+  .forprint{
+    display: none;
+    @media print{
+        margin-top: 10%;
+        display: block;
+        background:$primary-color;
+        color:black;
+    }
+}
+.lokation{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1%;
+    @media print{
+        display: none;
+    }
+}
