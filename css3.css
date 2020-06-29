@@ -22,6 +22,7 @@ a.button {
     display: flex;
     width: 100%;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .reviewslist{
   display: grid;
@@ -33,7 +34,7 @@ a.button {
 }
 .reviewcard{
     border: 1px solid #e38445;
-    border-radius: 30px;
+    border-radius: 20px;
     background-color:white;
 }
 .transparent {
@@ -212,6 +213,7 @@ a.button {
     display: flex;
     width: 100%;
     justify-content: center;
+    flex-wrap: wrap;
 }
 @media all and (max-width: 1050px){
   .headercont{
