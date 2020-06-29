@@ -28,7 +28,7 @@ while( $row=mysqli_fetch_assoc($sql_res) ) // пока есть записи
 {
 // выводим каждую запись как строку таблицы
 $ret.='<div class="card" style="padding:3%;">
-<img src = "data:image/png;base64,' .base64_encode($row['photo']) . '" width = "300px" alt="'.$row['name'].'" />
+<img src = "data:image/png;base64,' .base64_encode($row['photo']) . '" style="width:300px;" alt="'.$row['name'].'" />
 <h3>'.$row['name'].'</h3>
 <p>'.$row['breed'].'</p>
 <p>'.$row['yearofb'].'гр.</p>
