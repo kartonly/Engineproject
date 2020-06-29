@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
 <title>ЧК "Мадрид"</title>
-<html lang="en">
 <meta charset="utf-8">
 <link rel="stylesheet" type="text/css" href="css.css">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
@@ -25,7 +24,7 @@
 			<li><a class="menu__item" href="index1.php">Наши лошади</a></li>
 			<li><a class="menu__item" href="index2.php">Наша команда</a></li>
 			<li><a class="menu__item" href="index3.php">Отзывы</a></li>
-			<li><a class="menu__item" href="index4.html">Контакты</a></li>
+			<li><a class="menu__item" href="index4.php">Контакты</a></li>
     </ul>
   </div>
 
@@ -37,7 +36,7 @@
 <a class="headmenu" href="index1.php">Наши лошади</a>
 <a class="headmenu" href="index2.php">Наша команда</a>
 <a class="headmenu" href="index3.php">Отзывы</a>
-<a class="headmenu" href="index4.html">Контакты</a></div>
+<a class="headmenu" href="index4.php">Контакты</a></div>
 </header>
 <main>
 
@@ -56,7 +55,7 @@
 </p>
 <div class="butons">
 <a href="index1.php" class="button">Наши лошади</a>
-<a href="#" class="button">Контакты</a>
+<a href="index4.php" class="button">Контакты</a>
 </div>
 </div>
 
@@ -87,12 +86,12 @@ echo getFriendsList($_GET['sort'], $_GET['pg']);
   <form name="form_add" method="post" action="">
   <div class="form-row">
     <div class="form-group col-md-6">
-      <label for="input-email">Номер телефона</label>
-      <input type="phonenum" class="form-control" id="phonenum" name="phonenum" placeholder="Номер телефона">
+      <label for="phonenum">Номер телефона</label>
+      <input class="form-control" id="phonenum" name="phonenum" placeholder="Номер телефона">
     </div>
     <div class="form-group col-md-6">
-      <label for="input-password">Имя</label>
-      <input type="name" class="form-control" id="name" name="name" placeholder="Имя">
+      <label for="name">Имя</label>
+      <input type="text" class="form-control" id="name" name="name" placeholder="Имя">
     </div>
   </div>
   <input type="submit" name="button" class="form-control" value="Перезвоните мне!"> 
@@ -118,10 +117,12 @@ $sql_res=mysqli_query($mysqli,'INSERT INTO std_941.callme (name, phonenum) VALUE
 (string)($_POST['name']).'", "'.
 (int)($_POST['phonenum']).
 '")');
+header("Refresh: 0");
 }
 
 
 ?>
+  </div>
   </div>
 </main>
 <footer>
@@ -135,7 +136,6 @@ $sql_res=mysqli_query($mysqli,'INSERT INTO std_941.callme (name, phonenum) VALUE
 <a href="#"><img src="http://domenblin.std-941.ist.mospolytech.ru/2sem_laba4/4web/Vector%284%29.png" alt=""></a>
 </div>
 
-  </div>
 </footer>
 </body>
 </html>
