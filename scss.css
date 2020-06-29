@@ -1,0 +1,138 @@
+@use "sass:color";
+@use 'sass:map';
+header {
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+  width: 100%;
+  position: fixed;
+  background: white;
+  top: 0;
+  z-index: 10000;
+  padding: 1.5%; }
+  @media print {
+    header {
+      display: none; } }
+  @media all and (max-width: 800px) {
+    header {
+      align-items: center;
+      display: flex;
+      height: auto;
+      width: 100%;
+      position: fixed;
+      background: white;
+      top: 0;
+      z-index: 10000;
+      padding: 1.5%; } }
+
+.logo2 {
+  width: 22%; }
+  @media all and (max-width: 800px) {
+    .logo2 {
+      display: none; } }
+  @media print {
+    .logo2 {
+      display: none; } }
+
+.map {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  overflow: hidden;
+  padding-bottom: 35%;
+  position: relative;
+  height: 0; }
+  @media print {
+    .map {
+      display: none; } }
+
+iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute; }
+
+footer {
+  padding: 1%;
+  background: black;
+  color: white; }
+  @media print {
+    footer {
+      display: none;
+      background: white; } }
+
+.logocontainer {
+  display: none; }
+  @media all and (max-width: 800px) {
+    .logocontainer {
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+      justify-content: center; } }
+  @media print {
+    .logocontainer {
+      display: none; } }
+
+.menucontainer {
+  display: inline flex;
+  justify-content: space-between;
+  width: 60%;
+  margin-left: 7%; }
+  @media all and (max-width: 930px) and (min-width: 630px) {
+    .menucontainer {
+      display: inline flex;
+      justify-content: space-between;
+      width: 68%;
+      margin-left: 3%; } }
+  @media print {
+    .menucontainer {
+      display: none; } }
+
+.contaktme {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  display: grid; }
+  @media print {
+    .contaktme {
+      display: none; } }
+
+.headercont {
+  background: url(https://sun1-22.userapi.com/W9HN0A9ipTh44eZNIy3UAtxRtON6rEqVJ82_qQ/1D6PT2GQewY.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: 0 auto;
+  height: 350px;
+  background-position: 0px -240px; }
+  @media all and (max-width: 1050px) {
+    .headercont {
+      background: url(https://sun1-22.userapi.com/W9HN0A9ipTh44eZNIy3UAtxRtON6rEqVJ82_qQ/1D6PT2GQewY.jpg);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      margin: 0 auto;
+      height: 350px;
+      background-position: 0px; } }
+  @media print {
+    .headercont {
+      display: none; } }
+
+.forprint {
+  display: none; }
+  @media print {
+    .forprint {
+      margin-top: 10%;
+      display: block;
+      background: white;
+      color: black; } }
+
+.lokation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 1%; }
+  @media print {
+    .lokation {
+      display: none; } }
+
+/*# sourceMappingURL=scss.css.map */
